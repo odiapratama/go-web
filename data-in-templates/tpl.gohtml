@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passengers & Transport</title>
+</head>
+<body>
+
+<ul>
+    {{range .Passangers}}
+    <li>{{.Name}} - {{.Surname}} - {{.Age}} - {{.TransportId}}</li>
+    {{end}}
+</ul>
+
+<ul>
+    {{range .Transports}}
+    <li>{{.Id}} - {{.Type}} - {{.Model}}</li>
+    {{end}}
+</ul>
+
+</body>
+</html>
